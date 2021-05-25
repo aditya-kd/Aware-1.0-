@@ -1,0 +1,50 @@
+
+.card {
+  /* Add shadows to create the "card" effect */
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  
+  transition: 0.3s;
+  margin:1vh 35vw;
+  padding: 1vw;
+  text-align: center;
+  width: 30vw;
+  display: inline-block;
+  
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card:hover .hidden {
+  display: block;
+}
+
+.moodContainer {
+  display: inline-block;
+  color: black;
+  font-size: 2vw;
+  background-image: url("E:/Web Developement/mental-health-1/mental-health-1.1/src/Images/wallpaper3.gif");
+}
+
+.heading {
+  font-size: 5vw;
+  color: #08998f;
+  font-family: "Niconne", cursive;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+.parent {
+  font-family: "Fredericka the Great", cursive;
+  color: #08998f;
+}
+@media screen and (max-width: 400px) {
+  .one .two .three .four .five {
+    width: 100%;
+    background-color: red;
+  }
+}
