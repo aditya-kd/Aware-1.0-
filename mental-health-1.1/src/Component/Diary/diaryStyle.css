@@ -1,0 +1,24 @@
+.text-area{
+    width: 90vw;
+    margin:5vh 5vw;
+    height: 90vh;
+    font-family: 'Bad Script', cursive;
+    padding:4vh  2vw;
+    font-weight: bold;
+    color: #08998f;
+    font-size:3vw;
+    border-radius: 45px;
+    border: none;
+    border-collapse:collapse;
+    border:3px solid #49C6E5;
+    resize: none;
+
+}
+
+.save-button{
+    margin:2vh 35vw;
+    font-family: 'Bad Script', serif;
+    width:30vw;
+    font-size: 4vw;
+
+}
