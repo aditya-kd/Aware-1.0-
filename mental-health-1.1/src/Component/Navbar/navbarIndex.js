@@ -1,7 +1,11 @@
 import { Nav, Navbar } from "react-bootstrap";
-import { BrowserRouter as Router, Link, Route } from "react-router-dom";
+import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import Landing from "../Landing/landingIndex";
 import { NavStyle } from "./navbarStyle";
-
+import Diary from "../Diary/diaryIndex";
+import About from "../About/aboutIndex";
+import Question from "../Question/questionIndex"
+import LoginPage from "../Auth/AuthApp"
 const NavbarIndex = () => {
   return (
     <div>
@@ -39,6 +43,7 @@ const NavbarIndex = () => {
               </Nav.Link>
               <Nav.Link>
                 <Link
+                to="/question"
                   style={{
                     color: "black",
                     textDecoration: "none",
@@ -65,7 +70,7 @@ const NavbarIndex = () => {
                   {/* <div style={{float:"right"}}> */}
               <Nav.Link>
                 <Link
-                  to="/signup"
+                  to="/login"
                   style={{
                     color: "black",
                     textDecoration: "none",
@@ -74,31 +79,39 @@ const NavbarIndex = () => {
                     
                   }}
                 >
-                 Sign Up
+                 Sign In
                 </Link>
               </Nav.Link>
 
-              <Nav.Link>
-                <Link
-                  to="/login"
-                  style={{
-                    color: "black",
-                    textDecoration: "none",
-                    fontSize: "1.3rem",
-                    margin: "1.5rem",
-                
-                  }}
-                >
-                  Login
-                </Link>
-              </Nav.Link>
+              
               {/* </div> */}
 
               {/* </NavStyle> */}
             </Nav>
           </Navbar.Collapse>
         </Navbar>
+
+        <Switch>
+      <Route path="/diary">
+        <Diary/>
+      </Route>
+
+      <Route path="/" exact>
+        <Landing/>
+      </Route>
+      <Route path="/about">
+        <About/>
+      </Route>
+      <Route path="/question">
+        <Question/>
+      </Route>
+      
+      <Route path="/login">
+                  <LoginPage/>
+      </Route>
+      </Switch>
       </Router>
+     
     </div>
   );
 };
