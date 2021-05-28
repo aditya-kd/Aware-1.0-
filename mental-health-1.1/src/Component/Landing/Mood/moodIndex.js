@@ -1,63 +1,107 @@
-// import { BiHappyAlt } from "react-icons/bi";
-// import { RiEmotionHappyLine, RiEmotionUnhappyLine } from "react-icons/ri";
-// import { HiOutlineEmojiHappy } from "react-icons/hi";
-// import { ImCrying } from "react-icons/im";
-// import { FaCoffee } from "react-icons/fa";
+import { Component } from "react";
 import "./mood.css";
-const Mood = () => {
 
-    // const [happy,setHappyCount]
+
+class Mood extends Component {
+constructor(){
+super();
+    // const [happy,setHappyCount]    
+    
+}
+change1()
+{
+  console.log('Hello World')
+  localStorage.setItem('M1','Happy')
+}
+change2()
+{
+  console.log('Hello World')
+  localStorage.setItem('M2','Good')
+}
+change3()
+{
+  console.log('Hello World')
+  localStorage.setItem('M3','Normal')
+}
+change4()
+{
+  console.log('Hello World')
+  localStorage.setItem('M4','Sad')
+}
+change5()
+{
+  console.log('Hello World')
+  localStorage.setItem('M5','Awful')
+}
+render(){
+
   return (
     <div>
       <div className="heading ">How's you feeling??</div>
       <div className="moodContainer">
-        <div style={{display:"inline-block"}} className="card one">
-          <p className="parent"> Happy</p>
-          <p className="hidden">
-            {" "}
-            That's great
-            <br />
-          </p>
+        
+        <div style={{borderRadius:'24px'}} className="card one" >
+          <button style={{backgroundColor: '#4CAF50', /* Green */
+  borderRadius: '24px',
+  color: 'white',
+  padding: '5px 60px',
+  textAlign:'center',
+  textDecoration:'none',
+  fontSize: '16px'}} onClick={this.change1}>Happy</button>
         </div>
-        <div style={{display:"inline-block"}} className="card two">
-          {" "}
-          <p className="parent"> Good</p>
-          <p className="hidden">
-            {" "}
-            That's great
-            <br />
-          </p>{" "}
+
+        <div style={{borderRadius:'24px'}} className="card two" >
+          <button
+          style={{backgroundColor: '#4CAF50', /* Green */
+          borderRadius: '24px',
+          color: 'white',
+          padding: '5px 60px',
+          textAlign:'center',
+          textDecoration:'none',
+          fontSize: '16px'}}
+           onClick={this.change2}>Good</button>
         </div>
-        <div style={{display:"inline-block"}} className="card two">
-          {" "}
-          <p className="parent"> Normal</p>
-          <p className="hidden">
-            {" "}
-            That's great
-            <br />
-          </p>{" "}
+        
+        <div style={{borderRadius:'24px'}} className="card two">
+        <button
+        style={{backgroundColor: '#4CAF50', /* Green */
+        borderRadius: '24px',
+        color: 'white',
+        padding: '5px 60px',
+        textAlign:'center',
+        textDecoration:'none',
+        fontSize: '16px'}}
+         onClick={this.change3}>Normal</button>
         </div>
-        <div style={{display:"inline-block"}} className=" card four">
-          {" "}
-          <p className="parent"> Sad</p>
-          <p className="hidden">
-            {" "}
-            That's great
-            <br />
-          </p>{" "}
+
+        <div style={{borderRadius:'24px'}} className=" card four">
+        <button
+        style={{backgroundColor: '#4CAF50', /* Green */
+        borderRadius: '24px',
+        color: 'white',
+        padding: '5px 60px',
+        textAlign:'center',
+        textDecoration:'none',
+        fontSize: '16px'}}
+         onClick={this.change4}>Sad</button>
         </div>
-        <div style={{display:"inline-block"}} className="card five">
-          {" "}
-          <p className="parent"> Awful</p>
-          <p className="hidden">
-            {" "}
-            That's great
-            <br />
-          </p>{" "}
+
+        <div style={{borderRadius:'24px'}} className="card five">
+        <button
+        style={{backgroundColor: '#4CAF50', /* Green */
+        borderRadius: '24px',
+        color: 'white',
+        padding: '5px 60px',
+        textAlign:'center',
+        textDecoration:'none',
+        fontSize: '16px'}}
+         onClick={this.change5}>Awful</button>
+
         </div>
+
       </div>
     </div>
   );
 };
-
+}
 export default Mood;

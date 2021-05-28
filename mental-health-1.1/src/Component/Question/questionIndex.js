@@ -11,39 +11,22 @@ class Question extends Component {
       ans2: "",
       ans3: "",
       ans4: "",
-      ans5: "",
-      ques1: Math.floor(Math.random() * 23) + 1,
-      ques2: Math.floor(Math.random() * 22) + 1,
-      ques3: Math.floor(Math.random() * 21) + 1,
-      ques4: Math.floor(Math.random() * 20) + 1,
-      ques5: Math.floor(Math.random() * 19) + 1,
-    };
+      ans5: "",      
+      ques1: Math.floor(Math.random() * (10 - 5 ) ) + 5,
+      ques2: Math.floor(Math.random() * (4 - 0 ) ) + 0,
+      ques3: Math.floor(Math.random() * (15 - 11 ) ) + 11,
+      ques4: Math.floor(Math.random() * (20 - 16 ) ) + 16,
+      ques5: Math.floor(Math.random() * (24 - 21 ) ) + 21
+    };    
     this.addAnswer = this.addAnswer.bind(this);
     this.saveAnswer = this.saveAnswer.bind(this);
+
+   
   }
-  getRndInteger() {
-    return Math.floor(Math.random() * (26 - 1 + 1) ) + 1;
-  }
+
   
-  findidLlist()
-  { 
-    var idList=[]
-    while(idList.length<5)
-    {
-      let id=this.getRndInteger();
-      if( idList.includes(id)===false)
-      idList.push(id);
-    }    
-    return idList;
-  }
-
-  randomGen() {
-    var idList=this.findidLlist();
-    console.log("GEN ID LIST")
-    console.log(idList);
-    return idList;
-  }
-
+  
+  
   addAnswer(no, event) {
     if (no === 1) {
       this.setState({
@@ -80,13 +63,32 @@ class Question extends Component {
         "\n" +
         this.state.ans5
     );
+    localStorage.setItem('A1',this.state.ans1);
+    localStorage.setItem('A2',this.state.ans2);
+    localStorage.setItem('A3',this.state.ans3);
+    localStorage.setItem('A4',this.state.ans4);
+    localStorage.setItem('A5',this.state.ans5);
+    localStorage.setItem('Q1',questions[this.state.ques1].ques);
+     localStorage.setItem('Q2',questions[this.state.ques2].ques);
+     localStorage.setItem('Q3',questions[this.state.ques3].ques);
+     localStorage.setItem('Q4',questions[this.state.ques4].ques);
+     localStorage.setItem('Q5',questions[this.state.ques5].ques);
     event.preventDefault();
   }
 
+  // let q1=questions[Math.floor(Math.random() * (4 - 0 ) ) + 0].ques;
+  //   let q2=questions[Math.floor(Math.random() * (10 - 5 ) ) + 5].ques;
+  //   let q3=questions[Math.floor(Math.random() * (15 - 11 ) ) + 11].ques;
+  //   let q4=questions[Math.floor(Math.random() * (20 - 16 ) ) + 16].ques;
+  //   let q5=questions[Math.floor(Math.random() * (24 - 21 ) ) + 21].ques;
+  //   localStorage.setItem('Q1',q1);
+  //   localStorage.setItem('Q2',q2);
+  //   localStorage.setItem('Q3',q3);
+  //   localStorage.setItem('Q4',q4);
+  //   localStorage.setItem('Q5',q5);
   render() {
-    let idListfinal=this.randomGen();
-    console.log("FINAL ID LIST")
-    console.log(idListfinal);
+    
+    
     return (
       
       <div className="main">
@@ -103,7 +105,7 @@ class Question extends Component {
                 fontWeight: "bold",
               }}
             >
-              1. {questions[0].ques}
+              1. {questions[this.state.ques1].ques}
             </label>
             <br />
             <textarea
@@ -126,7 +128,7 @@ class Question extends Component {
                 fontWeight: "bold",
               }}
             >
-              2. {questions[1].ques}
+              2. {questions[this.state.ques2].ques}
             </label>
             <br />
             <textarea
@@ -149,7 +151,7 @@ class Question extends Component {
                 fontWeight: "bold",
               }}
             >
-              3. {questions[2].ques}
+              3. {questions[this.state.ques3].ques}
             </label>
             <br />
             <textarea
@@ -172,7 +174,7 @@ class Question extends Component {
                 fontWeight: "bold",
               }}
             >
-              4. {questions[4].ques}
+              4. {questions[this.state.ques4].ques}
             </label>
             <br />
             <textarea
@@ -196,10 +198,11 @@ class Question extends Component {
                 fontWeight: "bold",
               }}
             >
-              5. {questions[5].ques}
+              5. {questions[this.state.ques5].ques}
             </label>
             <br />
             <textarea
+            
               id="ques5"
               type="text"
               placeholder="Your answer"

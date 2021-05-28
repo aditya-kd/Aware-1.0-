@@ -1,24 +1,37 @@
-.text-area{
+.diary-container {
+    background-image: url("../Images/wallapper2.jpg");
+    height: 100vh;
     width: 90vw;
-    margin:5vh 5vw;
-    height: 90vh;
-    font-family: 'Bad Script', cursive;
-    padding:4vh  2vw;
+    margin: 1vh 4.4vw;
+    padding: 2vh 2.2vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: none; */
+  }
+  
+  .text-area {
+    width: 85vw;
+    /* margin:5vh 5vw; */
+    height: 80vh;
+    font-family: "Antic Slab", cursive;
+    padding: 4vh 2vw;
     font-weight: bold;
     color: #08998f;
-    font-size:3vw;
+    font-size: 2vw;
     border-radius: 45px;
     border: none;
-    border-collapse:collapse;
-    border:3px solid #49C6E5;
+    border-collapse: collapse;
+    /* //  border:3px solid #49C6E5; */
     resize: none;
-
-}
-
-.save-button{
-    margin:2vh 35vw;
-    font-family: 'Bad Script', serif;
-    width:30vw;
+    margin-top: 7vh;
+    box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.9);
+    opacity: 0.8;
+  }
+  
+  .save-button {
+    margin: 5vh 35vw;
+    font-family: "Bad Script", serif;
+    width: 30vw;
     font-size: 4vw;
-
-}
+  }
+  

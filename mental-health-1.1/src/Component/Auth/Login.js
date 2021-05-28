@@ -4,6 +4,10 @@ import Landing from '../Landing/landingIndex'
 import './myStyle.css'
 
 class Login extends React.Component{
+
+
+    
+
     login(){
         const email=document.querySelector("#email").value;
         const password= document.querySelector("#Password").value;
@@ -12,7 +16,13 @@ class Login extends React.Component{
         .then((u)=>{
             console.log("Succesfully Logged in");
             window.alert("You're logged in to Aware");
-           
+            console.log(u);
+            const UID=u.user.uid;
+            console.log("User ID: ")
+            console.log(UID); 
+            console.log("Email Add: "+email)
+            localStorage.setItem('UID', UID);
+            localStorage.setItem("EMail", email);        
         })
         .catch((err)=>{
             console.log("Error: "+err.toString());
@@ -48,11 +58,13 @@ class Login extends React.Component{
             </div>
             <div>
                 <div>Password</div>
-                <input style={{border: '2px solid black',
-                 padding: '10px 20px',
-                fontFamily: 'sans-serif',
-            WebkitBorderRadius:'5px',
-            color: 'black'}} id="Password" placeholder="Password" type="password"/>
+                <input style={{
+                    border: '2px solid black',
+                    padding: '10px 20px',
+                    fontFamily: 'sans-serif',
+                    WebkitBorderRadius:'5px',
+                    color: 'black'}} 
+            id="Password" placeholder="Password" type="password"/>
             </div>
             <button style={{
                 margin: '15px',
