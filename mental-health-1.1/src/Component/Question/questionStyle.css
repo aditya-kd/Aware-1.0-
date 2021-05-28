@@ -1,9 +1,30 @@
-.heading {
-}
+
 .content {
   font-family: "Antic Slab", cursive;
   font-size: 2vw;
-  padding:3vw;
-  
+  padding:2vh 8vw;
+  border-radius: 3px;
+  box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.6);
+  margin:1.5vw;
+  margin-bottom: 3vh;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-image: linear-gradient(#99f2c8,#1f4037); */
+  /* background-image: linear-gradient(#91eae4,#86a8e7,#7f7fd5); */
+  background-image: url("../Images/wallapaper10.jpg");
+}
+
+.ques-text-area{
+    width:80vw;
+    height: 25vh;
+    resize: none;
+    padding: 1vw;
+    margin-top: 1vh;box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.9);
+    border: none;
+    opacity: 0.8;
+    border-radius: 24px;
 
 }
+

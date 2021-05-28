@@ -5,14 +5,28 @@ class Home extends React.Component{
     
     logout()
     {
-
+        fire.auth().signOut();
+        console.log("User Logged out");
+        window.alert("You're Logged out of Aware.");
     }
     render()
     {
         return (
-            <div>
-                <h1>You are Logged in</h1>
-                <button onClick={this.logout}>Logout</button>
+            <div style={{textAlign: 'center' }}>
+                <h1 style={{color: 'black', fontFamily:'sans-serif'}}>You are Logged in</h1>
+                <button  style={{
+                    margin: '15px',                    
+                    border: "2px solid #f44336",                              
+                    padding: '10px 20px',
+                    fontFamily: 'sans-serif',
+                    textAlign: 'center',
+                    textDecoration: 'none',
+                    display: 'inline-block',
+                    fontSize: '16px',
+                    WebkitBorderRadius: '12px'      ,
+                    backgroundColor: 'white',
+                    color: 'black'
+                }} onClick={this.logout}>Logout</button>
             </div>
         )
     }

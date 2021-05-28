@@ -89,7 +89,9 @@ export const questions = [
     ques: "Whats make you feel excited?",
     ans: null,
   },
-  { ques: "What brightens up your day?", ans: null },
+  { 
+    ques: "What brightens up your day?", ans: null 
+  },
   {
     ques: "What gives you hope?",
     ans: null,

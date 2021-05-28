@@ -79,7 +79,7 @@ const NavbarIndex = () => {
                     
                   }}
                 >
-                 Sign In
+                 Sign In/Sign Out
                 </Link>
               </Nav.Link>
 
