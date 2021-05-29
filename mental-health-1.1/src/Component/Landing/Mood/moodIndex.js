@@ -5,7 +5,6 @@ import "./mood.css";
 class Mood extends Component {
 constructor(){
 super();
-    // const [happy,setHappyCount]    
     
 }
 change1()

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 export const FooterContainer = styled.footer`
   background-color: #8BD7D2;
