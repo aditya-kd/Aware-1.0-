@@ -51,7 +51,11 @@ Aware is an app where user can express their emotional states by writing diaries
 ![Screenshot (137)](https://user-images.githubusercontent.com/59360882/120083718-4a835a00-c0e8-11eb-94dc-fa8a29006ed4.png)
 
 ### Videos
-* Demo Link:(https://drive.google.com/file/d/1N446TQgBZ4fsnE-jdkkhrbZvlFwKgWxa/view?usp=sharing)
+* Demo Link https://drive.google.com/file/d/1N446TQgBZ4fsnE-jdkkhrbZvlFwKgWxa/view?usp=sharing
+* YouTUbe Link  https://youtu.be/duHjqi0bZR8
+
+### Hosted Site
+*   URL: https://awareprj-a91f2.web.app
 
 ### Contributers 🙍‍♂️
 * @aditya-kd
