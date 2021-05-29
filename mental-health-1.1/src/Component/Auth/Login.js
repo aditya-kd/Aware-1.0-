@@ -24,7 +24,8 @@ class Login extends React.Component{
             localStorage.setItem("EMail", email);        
         })
         .catch((err)=>{
-            console.log("Error: "+err.toString());
+            console.log("Error: "+err);
+            window.alert(err.toString());
         })
     }
     signup(){
