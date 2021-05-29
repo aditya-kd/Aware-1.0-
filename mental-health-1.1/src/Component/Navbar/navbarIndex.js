@@ -1,25 +1,26 @@
 import { Nav, Navbar } from "react-bootstrap";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import Landing from "../Landing/landingIndex";
-import { NavStyle } from "./navbarStyle";
 import Diary from "../Diary/diaryIndex";
 import About from "../About/aboutIndex";
 import Question from "../Question/questionIndex"
 import LoginPage from "../Auth/AuthApp"
+
 const NavbarIndex = () => {
   return (
-    <div>
+    <div >
       <Router>
         <Navbar bg="light" expand="lg">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              {/* <NavStyle> */}
+             
               <Nav.Link>
                 <Link
                   to="/"
                   style={{
                     color: "black",
+                    fontFamily: 'inherit',
                     textDecoration: "none",
                     fontSize: "1.3rem",
                     margin: "1.5rem",
@@ -33,6 +34,7 @@ const NavbarIndex = () => {
                   to="/diary"
                   style={{
                     color: "black",
+                    fontFamily:'inherit',
                     textDecoration: "none",
                     fontSize: "1.3rem",
                     margin: "1.5rem",
@@ -42,15 +44,13 @@ const NavbarIndex = () => {
                 </Link>
               </Nav.Link>
               <Nav.Link>
-                <Link
-                to="/question"
-                  style={{
+                <Link to="/question" style={{
                     color: "black",
+                    fontFamily:'inherit',
                     textDecoration: "none",
                     fontSize: "1.3rem",
                     margin: "1.5rem",
-                  }}
-                >
+                  }}>
                   Answer few questions
                 </Link>
               </Nav.Link>{" "}
@@ -59,6 +59,7 @@ const NavbarIndex = () => {
                   to="/about"
                   style={{
                     color: "black",
+                    fontFamily:'inherit',
                     textDecoration: "none",
                     fontSize: "1.3rem",
                     margin: "1.5rem",
@@ -73,6 +74,7 @@ const NavbarIndex = () => {
                   to="/login"
                   style={{
                     color: "black",
+                    fontFamily:'inherit',
                     textDecoration: "none",
                     fontSize: "1.3rem",
                     margin: "1.5rem",
@@ -82,11 +84,6 @@ const NavbarIndex = () => {
                  Sign In/Sign Out
                 </Link>
               </Nav.Link>
-
-              
-              {/* </div> */}
-
-              {/* </NavStyle> */}
             </Nav>
           </Navbar.Collapse>
         </Navbar>

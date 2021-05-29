@@ -1,5 +1,5 @@
 .diary-container {
-    background-image: url("../Images/wallapper2.jpg");
+    background-image: url("./diaryw.jpg");
     height: 100vh;
     width: 90vw;
     margin: 1vh 4.4vw;
@@ -13,10 +13,10 @@
     width: 85vw;
     /* margin:5vh 5vw; */
     height: 80vh;
-    font-family: "Antic Slab", cursive;
+    font-family: 'Open Sans', sans-serif;
     padding: 4vh 2vw;
     font-weight: bold;
-    color: #08998f;
+    color:rgb(36, 34, 34);
     font-size: 2vw;
     border-radius: 45px;
     border: none;
@@ -25,7 +25,7 @@
     resize: none;
     margin-top: 7vh;
     box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.9);
-    opacity: 0.8;
+    opacity: 0.6;
   }
   
   .save-button {

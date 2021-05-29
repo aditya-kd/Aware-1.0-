@@ -15,7 +15,7 @@ const Footer = () => {
       <FooterWrap>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/">Aware | Mental Awareness App</SocialLogo>
+            <SocialLogo to="/" style={{fontFamily:'monospace'}}>Aware | Mental Awareness App</SocialLogo>
             <SocialIcons>
               <SocialIconsLink
                 href="https://www.facebook.com/profile.php?id=100043265192641"

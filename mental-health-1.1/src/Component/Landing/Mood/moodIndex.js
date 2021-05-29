@@ -37,64 +37,74 @@ render(){
 
   return (
     <div>
-      <div className="heading ">How's you feeling??</div>
+      <div className="heading " >How's you feeling??</div>
       <div className="moodContainer">
         
         <div style={{borderRadius:'24px'}} className="card one" >
-          <button style={{backgroundColor: '#4CAF50', /* Green */
-  borderRadius: '24px',
-  color: 'white',
-  padding: '5px 60px',
-  textAlign:'center',
-  textDecoration:'none',
-  fontSize: '16px'}} onClick={this.change1}>Happy</button>
+          <button style={{backgroundColor: '#fce0c2', /* Green */
+                          borderRadius: '24px',
+                          fontFamily:'sans-serif',
+                          color: '#4a464a',
+                          padding: '4px 55px',
+                          textAlign:'center',
+                          border:'none',
+                        textDecoration:'none',
+  fontSize: '18px'}} onClick={this.change1}>Happy!</button>
         </div>
 
         <div style={{borderRadius:'24px'}} className="card two" >
           <button
-          style={{backgroundColor: '#4CAF50', /* Green */
+          style={{backgroundColor: '#fce0c2', /* Green */
           borderRadius: '24px',
-          color: 'white',
-          padding: '5px 60px',
+          color: '#4a464a',
+          fontFamily:'sans-serif',
+          padding: '4px 55px',
           textAlign:'center',
           textDecoration:'none',
-          fontSize: '16px'}}
+          border:'none',
+          fontSize: '18px'}}
            onClick={this.change2}>Good</button>
         </div>
         
         <div style={{borderRadius:'24px'}} className="card two">
         <button
-        style={{backgroundColor: '#4CAF50', /* Green */
+        style={{backgroundColor: '#fce0c2', /* Green */
         borderRadius: '24px',
-        color: 'white',
-        padding: '5px 60px',
+        color: '#4a464a',
+        fontFamily:'sans-serif',
+        padding: '4px 55px',
         textAlign:'center',
         textDecoration:'none',
-        fontSize: '16px'}}
+        border:'none',
+        fontSize: '18px'}}
          onClick={this.change3}>Normal</button>
         </div>
 
         <div style={{borderRadius:'24px'}} className=" card four">
         <button
-        style={{backgroundColor: '#4CAF50', /* Green */
+        style={{backgroundColor: '#fce0c2', /* Green */
         borderRadius: '24px',
-        color: 'white',
-        padding: '5px 60px',
+        color: '#4a464a',
+        padding: '4px 55px',
+        fontFamily:'sans-serif',
         textAlign:'center',
         textDecoration:'none',
-        fontSize: '16px'}}
+        border:'none',
+        fontSize: '18px'}}
          onClick={this.change4}>Sad</button>
         </div>
 
         <div style={{borderRadius:'24px'}} className="card five">
         <button
-        style={{backgroundColor: '#4CAF50', /* Green */
+        style={{backgroundColor: '#fce0c2', /* Green */
         borderRadius: '24px',
-        color: 'white',
-        padding: '5px 60px',
+        border:'none',
+        color: '#4a464a',
+        padding: '4px 55px',
+        fontFamily:'sans-serif',
         textAlign:'center',
         textDecoration:'none',
-        fontSize: '16px'}}
+        fontSize: '18px'}}
          onClick={this.change5}>Awful</button>
 
         </div>

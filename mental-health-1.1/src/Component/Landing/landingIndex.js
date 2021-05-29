@@ -32,10 +32,15 @@ const Landing = () => {
   
   return (
       <div>
+        
     <Main>
  
-      <p style={{opacity:"1",fontSize:"3vw",fontWeight:"bolder",textAlign:"center",display:"flex",justifyContent:"center",alignItems:"center",height:"70vh",color:"white"}}>{quotes[number]}</p>
-     <p></p>
+      <p style={{opacity:"1",fontSize:"26px",fontWeight:"100",
+                textAlign:"center",display:"flex",justifyContent:"center",
+                alignItems:"center",height:"70vh",fontFamily: "Times New Roman",
+                color:"white"}}>
+                  {quotes[number]}
+                </p>
     </Main>
     <Mood/>
    

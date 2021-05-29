@@ -11,7 +11,7 @@ class Login extends React.Component{
     login(){
         const email=document.querySelector("#email").value;
         const password= document.querySelector("#Password").value;
-
+        localStorage.setItem("Logged in once", '1');
         fire.auth().signInWithEmailAndPassword(email, password)
         .then((u)=>{
             console.log("Succesfully Logged in");

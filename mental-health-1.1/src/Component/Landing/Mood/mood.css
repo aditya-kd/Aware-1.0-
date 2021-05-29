@@ -12,14 +12,19 @@
   display: inline-block;
   
 }
+.card:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: #5ca2f1;
+  
+  border: 1px solid #5ca2f1;
 }
-.card:hover .hidden {
-  display: block;
-}
+
 
 .moodContainer {
   display: inline-block;
@@ -29,9 +34,10 @@
 }
 
 .heading {
-  font-size: 5vw;
-  color: #08998f;
-  font-family: "Niconne", cursive;
+  font-size: 4vw;
+  font-weight: 600;
+  color: #429be4;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
 }
 
@@ -39,7 +45,6 @@
   display: none;
 }
 .parent {
-  font-family: "Fredericka the Great", cursive;
   color: #08998f;
 }
 @media screen and (max-width: 400px) {

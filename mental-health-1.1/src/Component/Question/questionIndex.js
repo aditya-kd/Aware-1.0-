@@ -1,5 +1,5 @@
 import { questions } from "../../db";
-import react, { Component } from "react";
+import { Component } from "react";
 import "./questionStyle.css";
 import { Button } from "react-bootstrap";
 
@@ -101,8 +101,11 @@ class Question extends Component {
             <label
               for="ques1"
               style={{
-                fontFamily: "Antic Slab",
-                fontWeight: "bold",
+                fontFamily: "Open Sans, sans-serif",
+                fontWeight: "0",
+                color:'#ffe6e6',
+                fontSize: '24px'               
+                
               }}
             >
               1. {questions[this.state.ques1].ques}
@@ -124,8 +127,10 @@ class Question extends Component {
             <label
               for="ques2"
               style={{
-                fontFamily: "Antic Slab",
-                fontWeight: "bold",
+                fontFamily: "'Open Sans', sans-serif",
+                fontWeight: "0",
+                color:'#ffe6e6',
+                fontSize: '24px'
               }}
             >
               2. {questions[this.state.ques2].ques}
@@ -147,8 +152,10 @@ class Question extends Component {
             <label
               for="ques3"
               style={{
-                fontFamily: "Antic Slab",
-                fontWeight: "bold",
+                fontFamily: "'Open Sans', sans-serif",
+                fontWeight: "0",
+                color:'#ffe6e6',
+                fontSize: '24px'
               }}
             >
               3. {questions[this.state.ques3].ques}
@@ -170,8 +177,10 @@ class Question extends Component {
             <label
               for="ques4"
               style={{
-                fontFamily: "Antic Slab",
-                fontWeight: "bold",
+                fontFamily: "'Open Sans', sans-serif",
+                fontWeight: "0",
+                color:'#ffe6e6',
+                fontSize: '24px'
               }}
             >
               4. {questions[this.state.ques4].ques}
@@ -185,7 +194,7 @@ class Question extends Component {
               spellCheck="false"
               required="true"
               value={this.state.ans4}
-              required="true"
+              
               onChange={(event) => {
                 this.addAnswer(4, event);
               }}
@@ -194,8 +203,10 @@ class Question extends Component {
             <label
               for="ques5"
               style={{
-                fontFamily: "Antic Slab",
-                fontWeight: "bold",
+                fontFamily: "'Open Sans', sans-serif",
+                fontWeight: "0",
+                color:'#ffe6e6',
+                fontSize: '24px'
               }}
             >
               5. {questions[this.state.ques5].ques}

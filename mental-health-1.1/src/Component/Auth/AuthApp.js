@@ -2,6 +2,7 @@ import Home from './Home.js'
 import Login from './Login.js'
 import fire from '../config/fire';
 import {Component} from 'react';
+import Landing from '../Landing/landingIndex.js';
 
 class AuthApp extends Component{
     constructor(props){
@@ -29,9 +30,10 @@ class AuthApp extends Component{
   }
 
   render(){
+    var loginChance=localStorage.getItem('Logged in once');
       return (
           <div>
-              {this.state.user ? (<Home/>) : (<Login/>)};
+              {this.state.user ?(<Home/>): (<Login/>)}
           </div>
       );
   }

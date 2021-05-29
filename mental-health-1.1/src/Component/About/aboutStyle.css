@@ -3,22 +3,21 @@
     width: 90vw;
     height:90vh;
     margin:5vh 5vw;
-    color:black;
+    filter:blur(4px);
     border:3px solid black;
 }
-
 .text-block{
-    background:black;
-    color:white;
-    opacity:0.7;
+    background:white;
+    color:black;
+    opacity:0.4;
     position:absolute;
-    top:19vh;
-    left:10vw;
-    height:80vh;
-    width:80vw;
-    padding: 2vw;
-    font-size:1.5vw;
-    font-family:"Antic Slab",cursive;
-
-
+    top:15vh;
+    left:7vw;
+    height:85vh;
+    width:86vw;
+    padding: 5px;
+    font-weight: 700;
+    font-size:16px;
+    font-family: "Open sans", sans-serif;
 }
+

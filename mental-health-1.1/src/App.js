@@ -9,9 +9,9 @@ function App() {
   return (
     <div>
       <GlobalStyle />
-     <Navbar/>
-      <Landing />
-      <Footer />
+      <Navbar/>    
+     <Footer/>      
+      
     </div>
   );
 }
