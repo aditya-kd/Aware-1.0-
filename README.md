@@ -34,21 +34,23 @@ Aware is an app where user can express their emotional states by writing diaries
 
 ![footer](https://user-images.githubusercontent.com/59360882/120083703-36d7f380-c0e8-11eb-88b8-c7e2d55b7098.jpg)
 
-* Here can all the diaries they wrote, question they answered and their moods till now.
-
-![journey](https://user-images.githubusercontent.com/59360882/120083704-37708a00-c0e8-11eb-907b-415cef73f427.jpg)
-
 * Here user can answer some of the most commonly asked questions to mental patients about their feelings and thoughts.
 
 ![question](https://user-images.githubusercontent.com/59360882/120083708-3d666b00-c0e8-11eb-8f1b-2069d2a3ae91.jpg)
+
+* From here user can select their mood.
+
+![Screenshot (131)](https://user-images.githubusercontent.com/59360882/120083740-7acaf880-c0e8-11eb-8498-57aad32b9eb7.png)
+
+* Here can all the diaries they wrote, question they answered and their moods till now.
+
+![journey](https://user-images.githubusercontent.com/59360882/120083704-37708a00-c0e8-11eb-907b-415cef73f427.jpg)
 
 * It is the login page where user can login/signup or logout.
 
 ![Screenshot (137)](https://user-images.githubusercontent.com/59360882/120083718-4a835a00-c0e8-11eb-94dc-fa8a29006ed4.png)
 
-* From here user can select their mood.
 
-![Screenshot (131)](https://user-images.githubusercontent.com/59360882/120083740-7acaf880-c0e8-11eb-8498-57aad32b9eb7.png)
 
 ### Contributers 🙍‍♂️
 * @aditya-kd
