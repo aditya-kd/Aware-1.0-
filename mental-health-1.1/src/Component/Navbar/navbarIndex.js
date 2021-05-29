@@ -65,10 +65,9 @@ const NavbarIndex = () => {
                     margin: "1.5rem",
                   }}
                 >
-                  About Us
+                  Your Journey
                 </Link>
               </Nav.Link>
-                  {/* <div style={{float:"right"}}> */}
               <Nav.Link>
                 <Link
                   to="/login"

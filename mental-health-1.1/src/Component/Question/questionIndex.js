@@ -76,24 +76,14 @@ class Question extends Component {
     event.preventDefault();
   }
 
-  // let q1=questions[Math.floor(Math.random() * (4 - 0 ) ) + 0].ques;
-  //   let q2=questions[Math.floor(Math.random() * (10 - 5 ) ) + 5].ques;
-  //   let q3=questions[Math.floor(Math.random() * (15 - 11 ) ) + 11].ques;
-  //   let q4=questions[Math.floor(Math.random() * (20 - 16 ) ) + 16].ques;
-  //   let q5=questions[Math.floor(Math.random() * (24 - 21 ) ) + 21].ques;
-  //   localStorage.setItem('Q1',q1);
-  //   localStorage.setItem('Q2',q2);
-  //   localStorage.setItem('Q3',q3);
-  //   localStorage.setItem('Q4',q4);
-  //   localStorage.setItem('Q5',q5);
+  
   render() {
     
     
     return (
       
       <div className="main">
-      {/* {c = this.randomGen()}
-      {console.log(c)} */}
+      
         <p className="heading">Here are few questions to answer:)</p>
 
         <form onSubmit={this.saveAnswer}>
@@ -233,6 +223,7 @@ class Question extends Component {
             type="submit"
             variant="info"
             value="Submit"
+            style={{fontSize:"2vw"}}
           >
             Save
           </Button>

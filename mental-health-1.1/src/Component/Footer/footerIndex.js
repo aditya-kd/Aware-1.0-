@@ -15,7 +15,7 @@ const Footer = () => {
       <FooterWrap>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/" style={{fontFamily:'monospace'}}>Aware | Mental Awareness App</SocialLogo>
+            <SocialLogo to="/" style={{fontFamily:'monospace',color:"black"}}>Aware | Personal Wellbeing App</SocialLogo>
             <SocialIcons>
               <SocialIconsLink
                 href="https://www.facebook.com/profile.php?id=100043265192641"
@@ -23,7 +23,7 @@ const Footer = () => {
                 aria-label="Facebook"
                 rel="noopener noreferrer"
               >
-                <FaFacebook />
+                <FaFacebook style={{color:"white"}}/>
               </SocialIconsLink>
               <SocialIconsLink
                 href="linkedin.com/in/shiva-mishra-a802881a2"
@@ -31,7 +31,7 @@ const Footer = () => {
                 aria-label="LinkedIn"
                 rel="noopener noreferrer"
               >
-                <FaLinkedin />
+                <FaLinkedin style={{color:"white"}} />
               </SocialIconsLink>
               <SocialIconsLink
                 href="https://www.instagram.com/shivii340"
@@ -39,7 +39,7 @@ const Footer = () => {
                 aria-label="Instagram"
                 rel="noopener noreferrer"
               >
-                <FaInstagram />
+                <FaInstagram style={{color:"white"}} />
               </SocialIconsLink>
               <SocialIconsLink
                 href="https://github.com/Shivamishra21"
@@ -47,7 +47,7 @@ const Footer = () => {
                 aria-label="Github"
                 rel="noopener noreferrer"
               >
-                <FaGithub />
+                <FaGithub style={{color:"white"}} />
               </SocialIconsLink>
             </SocialIcons>
           </SocialMediaWrap>

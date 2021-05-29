@@ -1,6 +1,5 @@
 import React from "react";
 import { Main } from "./landingStyle";
-import Navbar from "../Navbar/navbarIndex";
 import Mood from "./Mood/moodIndex"
 
 const Landing = () => {

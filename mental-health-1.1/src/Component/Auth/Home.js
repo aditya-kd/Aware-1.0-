@@ -8,11 +8,12 @@ class Home extends React.Component{
         fire.auth().signOut();
         console.log("User Logged out");
         window.alert("You're Logged out of Aware.");
+        localStorage.clear();
     }
     render()
     {
         return (
-            <div style={{textAlign: 'center' }}>
+            <div style={{textAlign: 'center',height:"90vh",display:"flex",alignItems:"center",justifyContent:"center" }}>
                 <h1 style={{color: 'black', fontFamily:'sans-serif'}}>You are Logged in</h1>
                 <button  style={{
                     margin: '15px',                    
@@ -25,7 +26,9 @@ class Home extends React.Component{
                     fontSize: '16px',
                     WebkitBorderRadius: '12px'      ,
                     backgroundColor: 'white',
-                    color: 'black'
+                    color: 'black',
+                    
+                    
                 }} onClick={this.logout}>Logout</button>
             </div>
         )

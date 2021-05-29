@@ -1,4 +1,3 @@
-
 .content {
   font-family: "Open Sans", cursive;
   font-size: 2vw;
@@ -12,8 +11,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   
-  /* background-image: linear-gradient(#99f2c8,#1f4037); */
-  /* background-image: linear-gradient(#91eae4,#86a8e7,#7f7fd5); */
+  
   background-image: url("./quesbg.jpg");
 }
 

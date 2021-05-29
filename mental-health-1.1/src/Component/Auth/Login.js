@@ -1,7 +1,5 @@
 import React from 'react';
 import fire from '../config/fire'
-import Landing from '../Landing/landingIndex'
-import './myStyle.css'
 
 class Login extends React.Component{
 
@@ -9,6 +7,7 @@ class Login extends React.Component{
     
 
     login(){
+        localStorage.clear();
         const email=document.querySelector("#email").value;
         const password= document.querySelector("#Password").value;
         localStorage.setItem("Logged in once", '1');
@@ -35,15 +34,22 @@ class Login extends React.Component{
         fire.auth().createUserWithEmailAndPassword(email, password)
         .then((u)=> {
             console.log("Successfully Signed in");
+            const UID=u.user.uid;
+            console.log("User ID: ")
+            console.log(UID); 
+            console.log("Email Add: "+email)
+            localStorage.setItem('UID', UID);
+            localStorage.setItem("EMail", email); 
         })
         .catch((err)=>{
             console.log("Error : "+err.toString());
         })
+        
     }
     render()
     {
         return(
-            <div style={{textAlign: 'center' }}>
+            <div style={{textAlign: 'center',height:"90vh" }}>
             <div>
                 <h3 style={{color: 'black',                            
                             fontFamily:'sans-serif'                            

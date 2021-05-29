@@ -1,23 +1,25 @@
 .about-container{
-    background-image: url("./wallpaper6.jpg");
-    width: 90vw;
-    height:90vh;
-    margin:5vh 5vw;
-    filter:blur(4px);
-    border:3px solid black;
-}
-.text-block{
-    background:white;
-    color:black;
-    opacity:0.4;
-    position:absolute;
-    top:15vh;
-    left:7vw;
-    height:85vh;
-    width:86vw;
-    padding: 5px;
-    font-weight: 700;
-    font-size:16px;
-    font-family: "Open sans", sans-serif;
+    background-image: url("./aboutbg2.jpg");
+    width: 96vw;
+    height:92vh;
+    margin:3vh 2vw;
+    background-size:"";
+    background-size: cover;
+    padding: 2vh 2vw;
 }
 
+
+.text-block{
+    height: 80vh;
+    font-family: 'Open Sans', sans-serif;
+    padding: 4vh 2vw;
+    font-weight: bold;
+    color:rgb(36, 34, 34);
+    font-size: 2vw;
+    border-radius: 45px;
+    border: none;
+    background-color: white;   
+    margin-top: 3vh;
+    box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.9);
+    opacity: 0.6;
+}
